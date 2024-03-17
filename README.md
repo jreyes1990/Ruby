@@ -1,1 +1,4 @@
-Curos de ruby
+Curso de ruby
+
+- https://www.ruby-lang.org/es/
+- 
