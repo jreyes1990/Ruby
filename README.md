@@ -1,6 +1,8 @@
 Curso de ruby
 
-  https://www.ruby-lang.org/es/
+Enlace documentacion de ruby.
+
+    https://www.ruby-lang.org/es/
    
  
  
