@@ -1,4 +1,4 @@
 Curso de ruby
 
-- https://www.ruby-lang.org/es/
-- 
+ https://www.ruby-lang.org/es/
+ 
