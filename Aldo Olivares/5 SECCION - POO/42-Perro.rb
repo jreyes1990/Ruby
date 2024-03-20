@@ -8,6 +8,15 @@ class Perro
     @color = color
     @edad = edad
   end
+
+  # Definicion de metodos
+  def ladrar
+    puts("Guau guau guau")
+  end
+
+  def descripcion
+    puts("Soy de raza #{@raza} de color #{@color} y tengo #{@edad}")
+  end
 end
 
 perro = Perro.new("Pastores Alemanes", "Cafe", "5 Anios")
@@ -22,3 +31,7 @@ perro.color = "Gris"
 puts(perro.raza)
 puts(perro.color)
 puts(perro.edad)
+
+puts("\n")
+perro.ladrar
+perro.descripcion
