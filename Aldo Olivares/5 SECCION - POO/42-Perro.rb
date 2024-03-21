@@ -35,3 +35,6 @@ puts(perro.edad)
 puts("\n")
 perro.ladrar
 puts(perro)
+
+puts("\n***** Lista de metodos *****")
+puts(perro.methods)
