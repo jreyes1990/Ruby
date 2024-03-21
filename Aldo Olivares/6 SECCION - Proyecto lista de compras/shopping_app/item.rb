@@ -8,9 +8,9 @@ class Item
 
   def to_s
     if @checked
-      "[x]" + @text
+      "[x]" + " --> " + @text
     else
-      "[ ]" + @text
+      "[ ]" + " --> " + @text
     end
   end
 end
