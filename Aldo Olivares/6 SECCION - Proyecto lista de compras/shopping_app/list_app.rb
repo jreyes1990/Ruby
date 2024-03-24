@@ -65,7 +65,10 @@ class ListApp
         print("# de articulo que deseas marcar: ")
         index = gets.chomp.to_i
 
-        @list.check_item(index)
+        item = @list.check_item(index)
+        separador(60,"*")
+        puts("\n#{item.text} ha sido marcado de la lista.")
+        separador(60,"*")
       when 'v'
         puts("\n")
         @list.show_all()
