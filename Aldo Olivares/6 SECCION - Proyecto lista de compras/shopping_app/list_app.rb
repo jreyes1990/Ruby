@@ -26,16 +26,27 @@ class ListApp
       puts("m - Marcar un articulo")
       puts("b - Borrar todos los articulos")
       puts("s - Salir de la aplicacion")
-      
-      print("\nIngrese un valor: ")
+
+      print("\nSeleccione una opcion del menu: ")
       input = gets.chomp
 
       case input
+      when 'a'
+        print("Que deseas agregar?: ")
+        item = gets.chomp
+        @list.add_item(item)
+      when 'b'
+        @list.remove_all()
+      when 'v'
+        @list.show_all()
       when 's'
         break
+      else
+        puts("\nError, El valor ingresado no existe dentro del menu, verifique!")
       end
+      puts("\n==============================================================\n\n")
     end
-    puts("Gracias por utilizar nuestra aplicacion")
+    puts("\nGracias por utilizar nuestra aplicacion")
   end
 end
 
