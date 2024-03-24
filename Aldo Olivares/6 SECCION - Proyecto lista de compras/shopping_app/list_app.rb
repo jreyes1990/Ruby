@@ -35,6 +35,11 @@ class ListApp
         print("Que deseas agregar?: ")
         item = gets.chomp
         @list.add_item(item)
+      when 'r'
+        print("# de articulo que deseas remover: ")
+        index = gets.chomp.to_i
+
+        @list.remove_item(index)
       when 'b'
         print("Deseas remover todos los articulos? (s/n) ")
         input = gets.chomp
@@ -44,6 +49,11 @@ class ListApp
         else
           puts("\nOperacion cancelada")
         end
+      when 'm'
+        print("# de articulo que deseas marcar: ")
+        index = gets.chomp.to_i
+
+        @list.check_item(index)
       when 'v'
         puts("\n")
         @list.show_all()
