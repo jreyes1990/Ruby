@@ -75,7 +75,7 @@ class ListApp
       when 's'
         break
       else
-        puts("\nError, El valor ingresado no existe dentro del menu, verifique!")
+        puts("\nError, operacion no reconocida, verifique!")
       end
       puts("\n\n==============================================================\n")
     end
