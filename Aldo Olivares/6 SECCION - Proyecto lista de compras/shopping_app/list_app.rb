@@ -48,7 +48,10 @@ class ListApp
         print("# de articulo que deseas remover: ")
         index = gets.chomp.to_i
 
-        @list.remove_item(index)
+        item = @list.remove_item(index)
+        separador(60,"*")
+        puts("\n#{item.text} ha sido removido de la lista.")
+        separador(60,"*")
       when 'b'
         print("Deseas remover todos los articulos? (s/n) ")
         input = gets.chomp
