@@ -17,9 +17,14 @@ class ListApp
     @list = List.new
   end
 
+  def separador(conteo, sep)
+    return conteo.times { print(sep) }
+  end
+
   def run
-    puts("Bienvenido a nuestra lista de compras")
+    puts("\nBienvenido a nuestra lista de compras")
     loop do
+      puts()
       puts("a - Agregar un articulo")
       puts("r - Remover un articulo")
       puts("v - Mostrar todos los articulo")
@@ -34,7 +39,11 @@ class ListApp
       when 'a'
         print("Que deseas agregar?: ")
         item = gets.chomp
+
         @list.add_item(item)
+        separador(60,"*")
+        puts("\nEl #{item} ha sido agregado a su lista.")
+        separador(60,"*")
       when 'r'
         print("# de articulo que deseas remover: ")
         index = gets.chomp.to_i
@@ -62,7 +71,7 @@ class ListApp
       else
         puts("\nError, El valor ingresado no existe dentro del menu, verifique!")
       end
-      puts("\n==============================================================\n\n")
+      puts("\n\n==============================================================\n")
     end
     puts("\nGracias por utilizar nuestra aplicacion")
   end
