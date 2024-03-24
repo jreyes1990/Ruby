@@ -36,8 +36,16 @@ class ListApp
         item = gets.chomp
         @list.add_item(item)
       when 'b'
-        @list.remove_all()
+        print("Deseas remover todos los articulos? (s/n) ")
+        input = gets.chomp
+
+        if input == 's'
+          @list.remove_all()
+        else
+          puts("\nOperacion cancelada")
+        end
       when 'v'
+        puts("\n")
         @list.show_all()
       when 's'
         break
