@@ -13,4 +13,15 @@ Enlace documentacion de ruby.
     https://www.ruby-lang.org/es/
    
  
- 
+* 8 SECCION - Sinatra
+  - Video 71 -> Introduccion
+    * QUE ES SINATRA?
+      * Es un framework para desarrollar aplicaciones web utilizando el lenguaje de programacion ruby.
+
+      * Fue diseniado por Blake Mizerany en California.
+
+      * Es mucho mas sencillo de aprender que Ruby on Rails. Por lo tanto es excelente para que los principiantes se introduzcan al munde del desarrollo web.
+
+Enlace documentacion de sinatra.
+
+    http://www.sinatrarb.com/
