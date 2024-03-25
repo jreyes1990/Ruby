@@ -1,10 +1,13 @@
 require "sinatra"
 
 get "/" do
-  "
-  <h1>Talleres del ciclo 2017-2018</h1>
-  <p>Futbol</P>
-  "
+  @files = Dir.entries("workshops")
+
+  @files.each do |file|
+    "
+    <a>#{file}</a>
+    "
+  end
 end
 
 get "/imagenes" do
