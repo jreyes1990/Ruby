@@ -25,3 +25,12 @@ Enlace documentacion de ruby.
 Enlace documentacion de sinatra.
 
     http://www.sinatrarb.com/
+
+
+A partir de mi última actualización en enero de 2022, la versión más reciente de Sinatra que debería ser compatible con Ruby 2.7.2 es la 2.1.0.
+
+Puedes intentar instalar esa versión específica utilizando el siguiente comando:
+
+    gem install sinatra -v 2.1.0
+
+
