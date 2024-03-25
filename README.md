@@ -34,3 +34,14 @@ Puedes intentar instalar esa versión específica utilizando el siguiente comand
     gem install sinatra -v 2.1.0
 
 
+* HTTP - PROTOCOLO DE TRANSPORTE DE HIPERTEXTO
+  * Es un estandar que dice como las computadoras se comunican a traves de la world wide web.
+
+  * Define varios metodos que indican cual es la accion a realizarse con una peticion en particular.
+
+* METODOS HTTP
+  * POST    - Agregar un recurso.
+  * GET     - Obtener un recurso.
+  * PUT     - Modificar un recurso.
+  * DELETE  - Borrar un recurso.
+  * Y MAS ...
