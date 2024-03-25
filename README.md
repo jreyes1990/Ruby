@@ -40,8 +40,8 @@ Puedes intentar instalar esa versión específica utilizando el siguiente comand
   * Define varios metodos que indican cual es la accion a realizarse con una peticion en particular.
 
 * METODOS HTTP
-    * POST    - Agregar un recurso.
-    * GET     - Obtener un recurso.
-    * PUT     - Modificar un recurso.
-    * DELETE  - Borrar un recurso.
-    * Y MAS ...
+  * POST    - Agregar un recurso.
+  * GET     - Obtener un recurso.
+  * PUT     - Modificar un recurso.
+  * DELETE  - Borrar un recurso.
+  * Y MAS ...
