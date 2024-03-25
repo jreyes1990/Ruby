@@ -3,11 +3,7 @@ require "sinatra"
 get "/" do
   @files = Dir.entries("workshops")
 
-  @files.each do |file|
-    "
-    <a>#{file}</a>
-    "
-  end
+  erb :home
 end
 
 get "/imagenes" do
