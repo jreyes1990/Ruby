@@ -6,7 +6,8 @@ get "/" do
   erb :home
 end
 
-get "/:nombre" do
-  @nombre = params[:nombre]
+get "/:name" do
+  @name = params[:name]
+  
   erb :taller
 end
