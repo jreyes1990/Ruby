@@ -6,8 +6,7 @@ get "/" do
   erb :home
 end
 
-get "/imagenes" do
-  "
-  <h1>Imagenes del sitio web</h1>
-  "
+get "/:nombre" do
+  @nombre = params[:nombre]
+  erb :taller
 end
