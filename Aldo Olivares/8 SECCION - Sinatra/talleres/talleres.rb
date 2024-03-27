@@ -12,6 +12,10 @@ get "/" do
   erb :home
 end
 
+get "/create" do
+  erb :create
+end
+
 get "/:name" do
   @name = params[:name]
   @description = workshop_content(@name)
