@@ -53,5 +53,8 @@ delete "/:name" do
 end
 
 get "/:name/edit" do
-  "Editar taller"
+  @name = params[:name]
+  @description = params[:description]
+  
+  erb :edit
 end
