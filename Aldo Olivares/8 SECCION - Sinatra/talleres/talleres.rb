@@ -54,7 +54,7 @@ end
 
 get "/:name/edit" do
   @name = params[:name]
-  @description = params[:description]
-  
+  @description = workshop_content(@name)
+
   erb :edit
 end
