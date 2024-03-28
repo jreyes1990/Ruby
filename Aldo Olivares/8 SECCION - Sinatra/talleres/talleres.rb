@@ -38,6 +38,16 @@ post "/create" do
   @description = params[:description]
 
   workshop_save(@name, @description)
+  @message = "creado"
 
-  erb :new
+  erb :message
+end
+
+delete "/:name" do
+  @name = params[:name]
+
+  workshop_delete(@name)
+  @message = "borrado"
+
+  erb :message
 end
