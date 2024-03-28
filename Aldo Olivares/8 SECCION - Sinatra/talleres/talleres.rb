@@ -33,6 +33,13 @@ get "/:name" do
   erb :taller
 end
 
+get "/:name/edit" do
+  @name = params[:name]
+  @description = workshop_content(@name)
+
+  erb :edit
+end
+
 post "/create" do
   @name = params[:name]
   @description = params[:description]
@@ -52,9 +59,13 @@ delete "/:name" do
   erb :message
 end
 
-get "/:name/edit" do
+put "/:name" do
   @name = params[:name]
-  @description = workshop_content(@name)
+  @description = params[:description]
 
-  erb :edit
+  workshop_save(@name, @description)
+  @message = "editado"
+
+  redirect "/#{@name}"
+  # erb :message
 end
