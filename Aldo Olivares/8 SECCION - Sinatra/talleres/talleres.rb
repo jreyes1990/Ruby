@@ -22,3 +22,10 @@ get "/:name" do
 
   erb :taller
 end
+
+post "/create" do
+  @name = params[:name]
+  @description = params[:description]
+
+  "<h1>#{@name}</h1><p>#{@description}</p>"
+end
