@@ -2,3 +2,5 @@
 <% @files.each do |file_name|%>
   <a href="/<%= File.basename(file_name, ".*").gsub(/\./, '') %>"><%= File.basename(file_name, ".*").gsub(/\./, '') %></a><br/>
 <% end %>
+<br>
+<a href="/create">Nuevo Taller</a>

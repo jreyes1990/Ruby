@@ -34,4 +34,6 @@ post "/create" do
   @description = params[:description]
 
   workshop_save(@name, @description)
+
+  erb :new
 end
