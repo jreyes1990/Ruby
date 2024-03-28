@@ -6,6 +6,12 @@ rescue Errno::ENOENT
   return nil
 end
 
+def workshop_save(name, description)
+  File.open("workshops/#{name}.txt", "w") do |file|
+    file.print(description)
+  end
+end
+
 get "/" do
   @files = Dir.entries("workshops")
 
@@ -27,5 +33,5 @@ post "/create" do
   @name = params[:name]
   @description = params[:description]
 
-  "<h1>#{@name}</h1><p>#{@description}</p>"
+  workshop_save(@name, @description)
 end
