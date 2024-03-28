@@ -51,3 +51,7 @@ delete "/:name" do
 
   erb :message
 end
+
+get "/:name/edit" do
+  "Editar taller"
+end
