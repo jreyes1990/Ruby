@@ -12,6 +12,10 @@ def workshop_save(name, description)
   end
 end
 
+def workshop_delete(name)
+  File.delete("workshops/#{name}.txt")
+end
+
 get "/" do
   @files = Dir.entries("workshops")
 
