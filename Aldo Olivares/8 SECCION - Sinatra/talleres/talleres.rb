@@ -1,4 +1,5 @@
 require "sinatra"
+require 'uri'
 
 def workshop_content(name)
   File.read("workshops/#{name}.txt")
@@ -66,6 +67,7 @@ put "/:name" do
   workshop_save(@name, @description)
   @message = "editado"
 
-  redirect "/#{@name}"
+  # Utilizamos URI.encode_www_form_component para codificar la parte de la URL
+  redirect URI.encode_www_form_component("/#{@name}")
   # erb :message
 end
