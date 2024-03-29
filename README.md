@@ -65,9 +65,9 @@ Enlace documentacion de sinatra.
     https://rubyonrails.org/
 
 
-    * 2 PRINCIPIOS PRINCIPALES:
-      * DRY (Don't Repeat Yourself)
-        Rails hace enfasis en no repetir el mismo codigo una y otra vez. De esta forma se evitan errores y es más mantenible.
+  * 2 PRINCIPIOS PRINCIPALES:
+    * DRY (Don't Repeat Yourself)
+      Rails hace enfasis en no repetir el mismo codigo una y otra vez. De esta forma se evitan errores y es más mantenible.
 
-      * Convention Over Configuration
-        Rails tiene convenciones acerca de la mejor forma de hacer las cosas en las aplicaciones web. Si nos apegamos a estas convenciones nos evitaremos de muchos problemas.
+    * Convention Over Configuration
+      Rails tiene convenciones acerca de la mejor forma de hacer las cosas en las aplicaciones web. Si nos apegamos a estas convenciones nos evitaremos de muchos problemas.
