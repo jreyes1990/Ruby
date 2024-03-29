@@ -1,4 +1,7 @@
 Curso de ruby
+
+***** TUTOR: ALDO OLIVARES *****
+
 * 2 SECCION - Introduccion a la programacion en ruby
   - Video 5 -> Introduccion
     * QUE ES RUBY?: Ruby es un lenguaje de programacion interpretado y orientado a objetos enfocado en la simplicidad
@@ -45,3 +48,26 @@ Puedes intentar instalar esa versión específica utilizando el siguiente comand
   * PUT     - Modificar un recurso.
   * DELETE  - Borrar un recurso.
   * Y MAS ...
+
+
+* 9 SECCION - Ruby on Rails
+  - Video 98 -> Introduccion
+    * QUE ES RUBY ON RAILS?
+      * Es un framework de desarrollo web hecho en Ruby.
+
+      * Esta diseñado para hacer el desarrollo de aplicaciones web más fácil haciendo suposiciones acerca de lo que los programadores necesitan para iniciar.
+
+      * Utilizando en aplicaciones muy complejas como Twitter, Shopify y Github.
+
+
+Enlace documentacion de sinatra.
+
+    https://rubyonrails.org/
+
+
+    * 2 PRINCIPIOS PRINCIPALES:
+      * DRY (Don't Repeat Yourself)
+        Rails hace enfasis en no repetir el mismo codigo una y otra vez. De esta forma se evitan errores y es más mantenible.
+
+      * Convention Over Configuration
+        Rails tiene convenciones acerca de la mejor forma de hacer las cosas en las aplicaciones web. Si nos apegamos a estas convenciones nos evitaremos de muchos problemas.
