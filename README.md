@@ -71,3 +71,24 @@ Enlace documentacion de sinatra.
 
     * Convention Over Configuration
       Rails tiene convenciones acerca de la mejor forma de hacer las cosas en las aplicaciones web. Si nos apegamos a estas convenciones nos evitaremos de muchos problemas.
+
+  - Video 99 -> Patron MVC
+    * QUE ES MVC?
+      * MVC significa por sus siglas en ingles Modelo-Vista-Controlador.
+
+      * Es un patron de arquitectura de software que separa las responsabilidades en tu aplicacion.
+
+    * QUE ES UN MODELO?
+      * Se encarga de interactuar con la base de datos y es la logica de tu aplicación.
+
+      * Usualmente corresponden directamente a una tabla en nuestra base de datos.
+
+    * QUE ES LA VISTA?
+      * Le muestra la información a los usuarios, regularmente en forma de HTML.
+
+      * Por defecto, las vistas en Ruby on Rails utilizan archivos de ruby embebido (ERB) para desplegar nuestra aplicación. Asi podemos generar HTML de forma más flexible y dinámica.
+
+    * QUE ES CONTROLADOR?
+      * Responde a las peticiones de los usuarios, usualmente en forma de clicks, para mandárselos al modelo correspondiente. Por último despliega los resultados usando nuestras vistas.
+
+      * Se podria decir que es el intermediario entre las vistas y los modelos.
