@@ -14,6 +14,9 @@ Curso de ruby
 Enlace documentacion de ruby.
 
     https://www.ruby-lang.org/es/
+
+
+    https://ruby-doc.org/core-2.7.0/Array.html
    
  
 * 8 SECCION - Sinatra
