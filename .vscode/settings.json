@@ -7,5 +7,7 @@
   },
   "[erb]": {
     "editor.defaultFormatter": null
-  }
+  },
+  "docwriter.progress.trackClasses": true,
+  "docwriter.progress.trackTypes": true
 }
