@@ -23,6 +23,11 @@ class Documento
   def imprimir
     puts("Imprimiendo el documento")
   end
+
+  protected
+    def metodo_protegido
+      puts("Metodo protegido")
+    end
 end
 
 class DocumentoHTML < Documento
@@ -48,10 +53,24 @@ class DocumentoHTML < Documento
   end
 end
 
+class DocumentoTexto < Documento
+  attr_accessor :extension
+
+  def initialize(...)
+    super(...)
+    @extension = ".txt"
+  end
+
+  def nombre_documento
+    super + extension
+  end
+end
+
 html = DocumentoHTML.new(encode: "UTF-8", nombre: "hello_world", readonly: false)
 puts(html.nombre)
 puts(html.nombre_documento)
 html.imprimir
 
-class DocumentoTexto < Documento
-end
+texto = DocumentoTexto.new(nombre: "DocumentoTexto", readonly: true)
+puts(texto.nombre)
+puts(texto.nombre_documento)
